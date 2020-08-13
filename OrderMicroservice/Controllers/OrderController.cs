@@ -5,11 +5,13 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.Extensions.Logging;
+using OrderMicroservice.Filters;
 using Service.RequestModels;
 using Service.ServiceInterfaces;
 
 namespace OrderMicroservice.Controllers
 {
+    [ApiKeyAuth]
     [ApiController]
     [Route("api/[controller]")]
     public class OrderController : ControllerBase
