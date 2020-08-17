@@ -11,7 +11,7 @@ using Service.ServiceInterfaces;
 
 namespace OrderMicroservice.Controllers
 {
-    [ApiKeyAuth]
+    // [ApiKeyAuth]
     [ApiController]
     [Route("api/[controller]")]
     public class OrderController : ControllerBase
